@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/item_IconImageView"
+        android:layout_width="50dip"
+        android:layout_height="50dip" />
+
+    <TextView
+        android:id="@+id/item_NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toEndOf="@+id/item_IconImageView"
+        android:layout_toRightOf="@+id/item_IconImageView"
+        android:text="123" />
+
+    <TextView
+        android:id="@+id/item_PackageNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_NameTextView"
+        android:layout_alignStart="@+id/item_NameTextView"
+        android:layout_below="@+id/item_NameTextView"
+        android:layout_marginTop="4dip"
+        android:text="456" />
+
+    <TextView
+        android:id="@+id/item_AppSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_PackageNameTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_PackageNameTextView"
+        android:text="10MB"
+        android:textColor="#33aa33" />
+
+    <TextView
+        android:id="@+id/item_VersionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="7789" />
+
+</RelativeLayout>
